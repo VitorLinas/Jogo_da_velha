@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="imgs/icone.SVG">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <h2 class="legenda"><img src="imgs/O.SVG" width="25px">Player 1</h2>
+    <h2 class="legenda"><img src="imgs/X.SVG" width="25px">Player 2</h2>
+    <h1>JOGO DA VELHA</h1>
+
+    <div class="stage">
+        <div>
+            <div style="background-color: rgb(253, 253, 150)" id="0" class="square"></div>
+            <div style="background-color: #bbf3f9" id="1" class="square"></div>
+            <div style="background-color: rgb(189, 236, 182)" id="2" class="square"></div>
+        </div>
+        <div>
+            <div style="background-color: rgb(255, 105, 97)" id="3" class="square"></div>
+            <div style="background-color: rgb(207, 207, 196)" id="4" class="square"></div>
+            <div style="background-color: rgba(163, 128, 104)" id="5" class="square"></div>
+        </div>
+        <div>
+            <div style="background-color: rgba(204, 169, 221)" id="6" class="square"></div>
+            <div style="background-color: rgba(255, 182, 193)" id="7" class="square"></div>
+            <div style="background-color: rgba(246, 120, 40)" id="8" class="square"></div>
+        </div>
+    </div>
+
+    <input onclick="restart()" id="restart" type="button" value="Restart">
+
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/interface.js"></script>
+</body>
+
+</html>
